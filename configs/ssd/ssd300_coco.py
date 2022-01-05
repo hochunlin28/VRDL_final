@@ -1,6 +1,6 @@
 _base_ = [
     '../_base_/models/ssd300.py', '../_base_/datasets/coco_detection.py',
-    '../_base_/schedules/schedule_2x.py', '../_base_/default_runtime.py'
+    '../_base_/schedules/schedule_1x.py', '../_base_/default_runtime.py'
 ]
 # dataset settings
 dataset_type = 'CocoDataset'
@@ -18,7 +18,7 @@ train_pipeline = [
         type='MinIoURandomCrop',
         min_ious=(0.1, 0.3, 0.5, 0.7, 0.9),
         min_crop_size=0.3),
-    dict(type='Resize', img_scale=(300, 300), keep_ratio=False),
+    dict(type='Resize', img_scale=(512, 512), keep_ratio=False),
     dict(type='RandomFlip', flip_ratio=0.5),
     dict(
         type='PhotoMetricDistortion',
@@ -34,7 +34,7 @@ test_pipeline = [
     dict(type='LoadImageFromFile'),
     dict(
         type='MultiScaleFlipAug',
-        img_scale=(300, 300),
+        img_scale=(512, 512),
         flip=False,
         transforms=[
             dict(type='Resize', keep_ratio=False),
@@ -52,8 +52,8 @@ data = dict(
         times=5,
         dataset=dict(
             type=dataset_type,
-            ann_file=data_root + 'annotations/instances_train2017.json',
-            img_prefix=data_root + 'train2017/',
+            ann_file=data_root + 'annotations/train_coco.json',
+            img_prefix=data_root + 'train/',
             pipeline=train_pipeline)),
     val=dict(pipeline=test_pipeline),
     test=dict(pipeline=test_pipeline))
