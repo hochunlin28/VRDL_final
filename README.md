@@ -32,3 +32,6 @@ configs/swinT/swinT.py python tools/train.py
 ```
 python generate_csv.py
 ```
+
+## Team Notes
+https://hackmd.io/@Bmj6Z_QbTMy769jUvLGShA/VRDL_Final/edit
