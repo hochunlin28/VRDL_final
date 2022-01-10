@@ -20,7 +20,7 @@ test_list = sorted(os.listdir(inputdir))
 #print((test_list))
 
 config = 'configs/swinT/swinT.py'
-checkpoint = 'work_dirs/swin-t_0.3:1/epoch_5.pth'
+checkpoint = 'work_dirs/swin-t_0:1/epoch_5.pth'
 device = 'cuda:0'
 
 f = open('answer_1.csv', 'w')
