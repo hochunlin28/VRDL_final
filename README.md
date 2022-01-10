@@ -14,7 +14,7 @@ pip install openmim
 mim install mmdet
 ```
 
-### Apex:
+### Apex (optional):
 We use apex for mixed precision training by default. To install apex, run:
 ```
 git clone https://github.com/NVIDIA/apex
