@@ -11,10 +11,7 @@ from tqdm import tqdm
 scale = 0.3
 
 df = pd.read_csv('stage_2_train_labels.csv')
-if not os.path.isfile('./train_normal'):
-    os.mkdir('./train_normal')
-if not os.path.isfile('./train_normal'):
-    os.mkdir('./val_normal')
+
     
 def split_train_image():
     total_unormal_count = 0
