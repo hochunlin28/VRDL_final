@@ -16,7 +16,7 @@ mim install mmdet
 ```
 * install packages
 ```
-pip install tqdm
+tqdm
 pip install opencv-python  
 pip install pandas
 pip install pydicom
@@ -41,6 +41,14 @@ pip install -v --disable-pip-version-check --no-cache-dir --global-option="--cpp
 * `python transfer_normal_image.py` to split the proportion of normal image. Modify `scale` variable to change the proportion.
 * `python generate_coco.py` to generate coco format of train/val directory. It will produce train_coco.json and val_coco.json.
 * After generate train_coco.json and val_coco.json, please put in annotation/ directory.
+
+```
+# in data/coco directory
+mkdir annotations
+cp train_coco.json ./annotations
+cp val_coco.json ./annotations
+cp test_coco.json ./annotations
+```
 ## Select Config file
 * swin transformer: "configs/swinT/swinT.py"
 
