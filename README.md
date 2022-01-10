@@ -58,8 +58,8 @@ cp test_coco.json ./annotations
 python tools/train.py configs/swinT/swinT.py
 ```
 ## download pretrainted model
-* After we train, it will get epoch5.pth in work_dirs/swin-t_0:1, please put epoch5.pth in work_dir/swin-t_0:1 to run generate_csv.py
-https://drive.google.com/file/d/1ARuXW_dw24XpTkbl5H-bxZmMBTBBgTh1/view?usp=sharing
+* After we train, it will produce epoch5.pth in work_dirs/swin-t_0:1, please put epoch5.pth in work_dir/swin-t_0:1. [download pretrainted model1](https://drive.google.com/file/d/1ARuXW_dw24XpTkbl5H-bxZmMBTBBgTh1/view?usp=sharing)
+* (Optional) If you want to ensemble models, [download pretrainted model2](https://drive.google.com/file/d/1QmftZPFuDphWB5y1Mk7SKJjKdsuuXjEq/view?usp=sharing), and modify the model path in the following command.
 
 
 ## Inference
@@ -75,10 +75,10 @@ python tools/test.py configs/swinT/swinT.py ./work_dirs/swin-t_0:1/epoch_5.pth -
 python generate_csv.py
 ```
 
-## Ensemble
-These are the csv answers we ensemble. [Google drive](https://drive.google.com/drive/folders/1GSD8JdPbntLMF76tnEeN7kv83_SEVVDl?usp=sharing)
+## Ensemble (optional)
+* These are the csv answers we ensemble (produced by the above weight). [Google drive](https://drive.google.com/drive/folders/1GSD8JdPbntLMF76tnEeN7kv83_SEVVDl?usp=sharing)
 
-
+* Run following command to ensemble.
 ```
 python ensemble.py
 
