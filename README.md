@@ -58,14 +58,14 @@ cp test_coco.json ./annotations
 python tools/train.py configs/swinT/swinT.py
 ```
 ## download pretrainted model
-* After we train, it will get epoch5.pth in work_dir/swin-t_0:1, please put epoch5.pth in work_dir/swin-t_0:1 to run generate_csv.py
+* After we train, it will get epoch5.pth in work_dirs/swin-t_0:1, please put epoch5.pth in work_dir/swin-t_0:1 to run generate_csv.py
 https://drive.google.com/file/d/1ARuXW_dw24XpTkbl5H-bxZmMBTBBgTh1/view?usp=sharing
 
 
 ## Inference
 * It will generate result.box.json and result.segm.json file and we can analyze with these files
 ```
-python tools/test.py configs/swinT/swinT.py ./work_dir/swin-t_0:1/epoch_5.pth --format-only --options "jsonfile_prefix=./results"
+python tools/test.py configs/swinT/swinT.py ./work_dirs/swin-t_0:1/epoch_5.pth --format-only --options "jsonfile_prefix=./results"
 
 ```
 
