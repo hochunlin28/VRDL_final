@@ -20,21 +20,21 @@ https://drive.google.com/file/d/16U4OkGQ_403cQapEIWxC-W3FWuJ9fgId/view?usp=shari
 
 ## Data Preparation
 * First, transform dicom image to png image. Therefore, split train image and validation image to 9:1. 
-* transfer_normal_image.py to split the proportion of normal image, we can modeify `scale` variable to change the proportion.
-* generate_coco.py to generate coco format of train/val directory, it will get train_coco.json and val_coco.json.
+* `python transfer_normal_image.py` to split the proportion of normal image, we can modeify `scale` variable to change the proportion.
+* `python generate_coco.py` to generate coco format of train/val directory, it will get train_coco.json and val_coco.json.
 
 ## Select Config file
-* swin transform: swinT.py
+* swin transform: "configs/swinT/swinT.py"
 
 ## Training
-* train model with pretrained model
+* train model with [pretrained model](https://github.com/SwinTransformer/Swin-Transformer-Object-Detection)
 ```
 python tools/train.py configs/swinT/swinT.py
 ```
 ## download pretrainted model
 * After we train, it will get epoch5.pth in work_dir/swin-t_0:1, please put epoch5.pth in work_dir/swin-t_0:1 to run generate_csv.py
-
 https://drive.google.com/file/d/1ARuXW_dw24XpTkbl5H-bxZmMBTBBgTh1/view?usp=sharing
+
 
 ## Inference
 * It will generate result.box.json and result.segm.json file and we can analyze with these files
@@ -49,8 +49,20 @@ python tools/test.py configs/swinT/swinT.py ./work_dir/swin-t_0:1/epoch_5.pth --
 python generate_csv.py
 ```
 
-## Team Notes
-https://hackmd.io/@Bmj6Z_QbTMy769jUvLGShA/VRDL_Final/edit
-
 ## Ensemble
+These are the csv answers we ensemble. [Google drive](https://drive.google.com/drive/folders/1GSD8JdPbntLMF76tnEeN7kv83_SEVVDl?usp=sharing)
 
+
+```
+python ensemble.py
+
+# Ensembling methods for object detection.
+    # USAGE: In ensemble.py, edit variable "a", "b" as the csv file you want to ensemble
+    # If you want to change size of width, height, modify convert_ratio. 
+    # There should be './stage_2_sample_submission.csv' in your working directory.
+    # Output will be './ensemble_answer.csv'
+```
+
+
+## Team Report
+https://drive.google.com/file/d/1uDGuslwrFidzXOXYAF-0-RNTavEEcEAH/view?usp=sharing
