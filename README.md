@@ -13,6 +13,11 @@ conda install pytorch==1.10.0 torchvision==0.11.1 cudatoolkit=10.2 -c pytorch
 pip install openmim
 mim install mmdet
 ```
+* install packages
+```
+tqdm
+
+```
 
 ### Apex (optional):
 We use apex for mixed precision training by default. To install apex, run:
