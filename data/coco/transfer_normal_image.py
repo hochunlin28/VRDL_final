@@ -1,4 +1,4 @@
-import glob, pylab, pandas as pd
+import glob, pandas as pd
 import numpy as np
 import cv2
 import os
@@ -11,8 +11,11 @@ from tqdm import tqdm
 scale = 0.3
 
 df = pd.read_csv('stage_2_train_labels.csv')
-
-
+if not os.path.isfile('./train_normal'):
+    os.mkdir('./train_normal')
+if not os.path.isfile('./train_normal'):
+    os.mkdir('./val_normal')
+    
 def split_train_image():
     total_unormal_count = 0
     normal_count = 0
@@ -51,5 +54,18 @@ def split_val_image():
     for i in range(int(normal_count)):
         shutil.move('./val_normal/' + train_normal_dir[i] , './val/')
         
+def transfer_all_normal_train():
+    train_dir = listdir('./train_normal')
+    for img in train_dir:
+        shutil.move('./train_normal/' + img , './train/')
+
+def transfer_all_normal_val():
+    val_dir = listdir('./val_normal')
+    for img in val_dir:
+        shutil.move('./val_normal/' + img , './val/')
+
+
+transfer_all_normal_train() 
+transfer_all_normal_val()        
 split_train_image()
 split_val_image()
