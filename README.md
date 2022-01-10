@@ -26,6 +26,9 @@ mim install mmdet
 ## Training
 * train model with pretrained model
 ```
-
+configs/swinT/swinT.py python tools/train.py
 ```
 ## Generate csv file
+```
+python generate_csv.py
+```
