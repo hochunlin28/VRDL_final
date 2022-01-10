@@ -26,7 +26,7 @@ mim install mmdet
 ## Training
 * train model with pretrained model
 ```
-configs/swinT/swinT.py python tools/train.py
+python tools/train.py configs/swinT/swinT.py
 ```
 ## Generate csv file
 * It will generate the csv file. modify the `checkpoint` variable to select different model weight.
