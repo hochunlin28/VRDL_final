@@ -8,7 +8,8 @@
   * Please refer to mmdetection for installation.
 
 ## Select Config file
-
+* swin transform: swinT.py
+* 
 ## Download Pretrained Model
 
 ## Training
