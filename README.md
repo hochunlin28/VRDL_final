@@ -22,15 +22,11 @@ cd apex
 pip install -v --disable-pip-version-check --no-cache-dir --global-option="--cpp_ext" --global-option="--cuda_ext" ./
 ```
 
-## Data Downloading
-* Please put data in data/coco directory
-
-https://drive.google.com/file/d/16U4OkGQ_403cQapEIWxC-W3FWuJ9fgId/view?usp=sharing
-
 ## Data Preparation
-* First, transform dicom image to png image. Therefore, split train image and validation image to 9:1. 
-* `python transfer_normal_image.py` to split the proportion of normal image, we can modeify `scale` variable to change the proportion.
-* `python generate_coco.py` to generate coco format of train/val directory, it will get train_coco.json and val_coco.json.
+* First, transform dicom image to png image. Afterwards, split train image and validation image to 9:1. We have done this for you. Simply download data from [Google drive](https://drive.google.com/file/d/16U4OkGQ_403cQapEIWxC-W3FWuJ9fgId/view?usp=sharing), and put data in data/coco directory.
+
+* `python transfer_normal_image.py` to split the proportion of normal image. Modify `scale` variable to change the proportion.
+* `python generate_coco.py` to generate coco format of train/val directory. It will produce train_coco.json and val_coco.json.
 
 ## Select Config file
 * swin transformer: "configs/swinT/swinT.py"
