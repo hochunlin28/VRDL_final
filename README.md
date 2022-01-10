@@ -15,6 +15,7 @@ mim install mmdet
 ```
 ## Data Downloading
 * Please put data in data/coco directory
+
 https://drive.google.com/file/d/16U4OkGQ_403cQapEIWxC-W3FWuJ9fgId/view?usp=sharing
 
 ## Data Preparation
@@ -32,6 +33,7 @@ python tools/train.py configs/swinT/swinT.py
 ```
 ## download pretrainted model
 * After we train, it will get epoch5.pth in work_dir/swin-t_0:1, please put epoch5.pth in work_dir/swin-t_0:1 to run generate_csv.py
+
 https://drive.google.com/file/d/1ARuXW_dw24XpTkbl5H-bxZmMBTBBgTh1/view?usp=sharing
 
 ## Inference
