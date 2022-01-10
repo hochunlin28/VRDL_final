@@ -10,10 +10,10 @@ her experiments to detect Pneumonia by our model.
 * Dataset:
 * There are three classes: Normal, Lung Opacity, or No Lung Opacity but Not Normal.
 * 26,684 training images, 3000 testing images
-![](https://i.imgur.com/Nf9Ablr.png)
+* ![](https://i.imgur.com/Nf9Ablr.png)
 
 * Process chart of our approach
-![](https://i.imgur.com/gPt2611.png)
+* ![](https://i.imgur.com/gPt2611.png)
 
 * Result
 Our private score is 0.15814, and our public score is 0.05729.
