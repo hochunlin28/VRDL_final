@@ -6,6 +6,14 @@
 
 * install mmdetection
   * Please refer to mmdetection for installation.
+```
+# quick install:
+# install pytorch correspond to your cuda version
+conda install pytorch==1.6.0 torchvision==0.7.0 cudatoolkit=10.2 -c pytorch
+pip install openmim
+mim install mmdet
+```
+## Data Preparation
 
 ## Select Config file
 * swin transform: swinT.py
@@ -14,5 +22,7 @@
 
 ## Training
 * train model with pretrained model
+```
 
+```
 ## Generate csv file
