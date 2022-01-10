@@ -14,6 +14,9 @@ pip install openmim
 mim install mmdet
 ```
 ## Data Preparation
+* First, transform dicom image to png image. Therefore, split train image and validation image to 9:1. 
+* transfer_normal_image.py to split the proportion of normal image.
+* generate_coco.py to generate coco format of train/val directory.
 
 ## Select Config file
 * swin transform: swinT.py
