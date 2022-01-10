@@ -5,9 +5,9 @@
 * install pytorch from https://pytorch.org/get-started/previous-versions/
 
 * install mmdetection
-  * Please refer to mmdetection for installation.
+  * Please refer to [mmdetection](https://github.com/open-mmlab/mmdetection/blob/master/docs/en/get_started.md) for installation.
 ```
-# quick install:
+# quick install for cuda 10.2:
 # install pytorch correspond to your cuda version
 conda install pytorch==1.10.0 torchvision==0.11.1 cudatoolkit=10.2 -c pytorch
 pip install openmim
