@@ -18,8 +18,6 @@ mim install mmdet
 * transfer_normal_image.py to split the proportion of normal image.
 * generate_coco.py to generate coco format of train/val directory.
 
-## Data download
-
 
 ## Select Config file
 * swin transform: swinT.py
