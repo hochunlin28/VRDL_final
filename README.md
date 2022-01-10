@@ -16,7 +16,7 @@ mim install mmdet
 ```
 * install packages
 ```
-tqdm
+pip install tqdm
 pip install opencv-python  
 pip install pandas
 pip install pydicom
