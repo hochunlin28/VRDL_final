@@ -70,7 +70,7 @@ python tools/test.py configs/swinT/swinT.py ./work_dirs/swin-t_0:1/epoch_5.pth -
 ```
 
 ## Generate csv file
-* It will generate the csv file which will uploaded to kaggle. Please Modify the `checkpoint` variable to select different model weight.
+* It will generate the csv file which will uploaded to kaggle. Please Modify the `checkpoint` variable to select different model weight. After execution, we will get answer_1.csv file.
 ```
 python generate_csv.py
 ```
