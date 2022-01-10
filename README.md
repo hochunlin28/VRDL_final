@@ -32,7 +32,7 @@ pip install -v --disable-pip-version-check --no-cache-dir --global-option="--cpp
 
 ## Data Preparation
 * First, transform dicom image to png image. Afterwards, split train image and validation image to 9:1. 
-* We have done this for you. Simply download data from [Google drive](https://drive.google.com/file/d/16U4OkGQ_403cQapEIWxC-W3FWuJ9fgId/view?usp=sharing), and put data in data/coco directory.
+* We have done this for you. Simply download data from [Google drive](https://drive.google.com/file/d/1VhoRWMAb8l1p7EKqA8a1KmVWevdCDcI5/view?usp=sharing), and put data in data/coco directory.
 
 * Go to directory: `cd data/coco`
 * `python transfer_normal_image.py` to split the proportion of normal image. Modify `scale` variable to change the proportion.
