@@ -33,7 +33,7 @@ https://drive.google.com/file/d/16U4OkGQ_403cQapEIWxC-W3FWuJ9fgId/view?usp=shari
 * `python generate_coco.py` to generate coco format of train/val directory, it will get train_coco.json and val_coco.json.
 
 ## Select Config file
-* swin transform: "configs/swinT/swinT.py"
+* swin transformer: "configs/swinT/swinT.py"
 
 ## Training
 * train model with [pretrained model](https://github.com/SwinTransformer/Swin-Transformer-Object-Detection)
