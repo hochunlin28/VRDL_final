@@ -20,7 +20,7 @@ mim install mmdet
 
 ## Select Config file
 * swin transform: swinT.py
-* 
+
 ## Download Pretrained Model
 
 ## Training
@@ -29,6 +29,7 @@ mim install mmdet
 configs/swinT/swinT.py python tools/train.py
 ```
 ## Generate csv file
+* It will generate the csv file. modify the `checkpoint` variable to select different model weight.
 ```
 python generate_csv.py
 ```
