@@ -1,5 +1,25 @@
 # VRDL_Final
 
+## Competetion
+https://www.kaggle.com/c/rsna-pneumonia-detection-challenge
+
+## Introduction
+The goal of this competition is to reduce the clinicians’ stress of reading high volumes of
+images. And our objective is to detect lung opacities on chest radiographs and conduct furt
+her experiments to detect Pneumonia by our model.
+* Dataset:
+* There are three classes: Normal, Lung Opacity, or No Lung Opacity but Not Normal.
+* 26,684 training images, 3000 testing images
+![](https://i.imgur.com/Nf9Ablr.png)
+
+* Process chart of our approach
+![](https://i.imgur.com/gPt2611.png)
+
+* Result
+Our private score is 0.15814, and our public score is 0.05729.
+![](https://i.imgur.com/qlN1Flj.png)
+
+
 ## Install Packages
 
 * install pytorch from https://pytorch.org/get-started/previous-versions/
@@ -92,3 +112,6 @@ python ensemble.py
 
 ## Team Report
 https://drive.google.com/file/d/1uDGuslwrFidzXOXYAF-0-RNTavEEcEAH/view?usp=sharing
+
+## Reference
+https://github.com/open-mmlab/mmdetection
