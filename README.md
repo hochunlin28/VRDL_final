@@ -18,6 +18,9 @@ mim install mmdet
 * transfer_normal_image.py to split the proportion of normal image.
 * generate_coco.py to generate coco format of train/val directory.
 
+## Data download
+
+
 ## Select Config file
 * swin transform: swinT.py
 
@@ -26,6 +29,9 @@ mim install mmdet
 ```
 python tools/train.py configs/swinT/swinT.py
 ```
+## download pretrainted model
+* After we train, it will get epoch5.pth in work_dir/swin-t_0:1, please put epoch5.pth in work_dir/swin-t_0:1 to run generate_csv.py
+
 ## Generate csv file
 * It will generate the csv file. modify the `checkpoint` variable to select different model weight.
 ```
