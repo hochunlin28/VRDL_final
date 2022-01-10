@@ -34,7 +34,7 @@ pip install -v --disable-pip-version-check --no-cache-dir --global-option="--cpp
 
 ## Data Preparation
 * First, transform dicom image to png image. Afterwards, split train image and validation image to 9:1. 
-* We have done this for you. Simply download data from [Google drive](), and put data in data/coco directory.
+* We have done this for you. Simply download data from [Google drive](https://drive.google.com/file/d/1uZDPDqx_8SV7O-pWyP_ClygY2N9CBrNj/view?usp=sharing), and put data in data/coco directory.
 
 
 * Go to directory: `cd data/coco`
