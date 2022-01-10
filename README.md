@@ -13,12 +13,12 @@ conda install pytorch==1.10.0 torchvision==0.11.1 cudatoolkit=10.2 -c pytorch
 pip install openmim
 mim install mmdet
 
-pip install opencv-python  
-pip install pandas
 ```
 * install packages
 ```
 tqdm
+pip install opencv-python  
+pip install pandas
 
 ```
 
